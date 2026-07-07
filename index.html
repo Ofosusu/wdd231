@@ -6,6 +6,8 @@
     <meta name="description" content="A simple HTML template">
     <meta name="author" content="Your Name">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Font+Name">
     <title>Document</title>
 </head>
 <body>
@@ -15,39 +17,39 @@
         <span>David Amoah page</span>
 
         <nav class="navigation">
-            <ul>
-                <li><a href="#about">Home</a></li>
-                <li><a href="#services">Chamber project</a></li>
-                <li><a href="#contact">Final Project</a></li>
+            
+                <span>Home</span>
+                <span>Chamber project</span>
+                <span>Final Project</span>
 
-            </ul>
+            
         </nav>
     
     </header>
     
     <main>
         <h1>Home</h1>
-        <section>
-            <div>
-                <h3>About me</h3>
+        <section class="container">
+            <div class="hero">
+                <h3 class="About">About me</h3>
                 <p>Hi, I'm David Ofosu Amoah, a web developer with a passion for creating dynamic and responsive websites. I love God and I love coding. I am a proud member of the church of Jesus Christ of Latter-day Saints. New weija ward.</p>
             </div>
-            <div>
-                <h3>student Photo</h3>
-                <img src="images/student.jpeg" alt="student photo">
+            <div class="student-photo">
+                <h3 class="About">student Photo</h3>
+                <img id="student-photo" src="images/student .jpeg" alt="student photo">
             </div>
         </section>
         <section>
-            <h3>Web Certificate Courses</h3>
-             <div>
-                <button>All</button>
-                <button>CSE</button>
-                <button>WDD</button>
+            <h3 class="About">Web Certificate Courses</h3>
+             <div class="button-container">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
              </div>
-             <div>
-                <button>WDD 130</button>
-                <button>WDD 131</button>
-                <button> WDD 231</button>
+             <div class="button-hero">
+                <button id="wdd130">WDD 130</button>
+                <button id="wdd131">WDD 131</button>
+                <button id="wdd231">WDD 231</button>
              </div>
              <P>The total credits for the course is listed above is 6</P>
         </section>
@@ -56,10 +58,10 @@
     </main>
 
     <footer>
-        <div>
-            <img src="images/github_icon.png" alt="">
-            <img src="images/linkedin_logo.png" alt="">
-            <img src="images/X_logo.png" alt="">
+        <div class="social-icons">
+            <img id="images" src="images/github_icon.png" alt="">
+            <img id="images"  src="images/linkedin_logo.png" alt="">
+            <img id="images"  src="images/X_logo.png" alt="">
         </div>
       <p>
         © <span id="year"></span> * David Amoah * Ghana *
@@ -67,7 +69,7 @@
       </p>
 
       <p>
-        Last modification: <span id="last-modification"></span>
+        Last modification: <span id="currentyear"></span>
       </p>
 
 
