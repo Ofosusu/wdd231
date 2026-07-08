@@ -3,44 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple HTML template">
-    <meta name="author" content="Your Name">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="A simple HTML template for a personal webpage. This template includes a header, navigation, main content area, and footer. It is designed to be responsive and easy to customize.">
+    <meta name="author" content="David Amoah">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/page.css">
     <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Font+Name">
-    <title>Document</title>
+    script  src="scripts/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <title>my page</title>
 </head>
 <body>
     <header> 
         
         <img id="logo" src="images/logo1.jpeg" alt="logo">
-        <span>David Amoah page</span>
+        <span id="page-title">David Amoah page</span>
 
         <nav class="navigation">
             
-                <span>Home</span>
-                <span>Chamber project</span>
-                <span>Final Project</span>
+                <a href="#"><span>Home</span></a>
+                <a href="#"><span>Chamber project</span></a>
+                <a href="#"><span>Contact</span></a>
 
-            
-        </nav>
-    
+            </nav>
+
     </header>
     
     <main>
+        <section>
         <h1>Home</h1>
+        </section>
+        
         <section class="container">
             <div class="hero">
-                <h3 class="About">About me</h3>
+                <h3 class="about">About me</h3>
                 <p>Hi, I'm David Ofosu Amoah, a web developer with a passion for creating dynamic and responsive websites. I love God and I love coding. I am a proud member of the church of Jesus Christ of Latter-day Saints. New weija ward.</p>
             </div>
             <div class="student-photo">
-                <h3 class="About">student Photo</h3>
-                <img id="student-photo" src="images/student .jpeg" alt="student photo">
+                <h3 class="about">student Photo</h3>
+                <img id="student-photo" src="images/student.jpeg" alt="student photo">
             </div>
         </section>
         <section>
-            <h3 class="About">Web Certificate Courses</h3>
+            <h3 class="about">Web Certificate Courses</h3>
              <div class="button-container">
                 <button id="all">All</button>
                 <button id="cse">CSE</button>
@@ -51,7 +56,7 @@
                 <button id="wdd131">WDD 131</button>
                 <button id="wdd231">WDD 231</button>
              </div>
-             <P>The total credits for the course is listed above is 6</P>
+             <p>The total credits for the course is listed above is 6</p>
         </section>
 
 
@@ -63,7 +68,8 @@
             <a href="https://www.linkedin.com/in/david-ofosu-amoah-bb22a3314/"><img id="images"  src="images/linkedin_logo.png" alt=""></a>
             <a href="https://x.com/ofosuDaved"> <img id="images"  src="images/X_logo.png" alt=""></a>
         </div>
-      <p>
+     <div class="footer-text">
+         <p>
         © <span id="year"></span> * David Amoah * Ghana *
         
       </p>
@@ -71,10 +77,11 @@
       <p>
         Last modification: <span id="currentyear"></span>
       </p>
+     </div>
 
 
     </footer>
 
-    <script src="script.js"></script>
+    
 </body>
 </html>
