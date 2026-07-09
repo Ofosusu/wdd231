@@ -73,7 +73,7 @@ button{
     border: 1px solid #0c0b0f;
     border-radius: 0%;
     background-color: rgb(247, 248, 250);
-    box-shadow: #0c0b0f;
+    box-shadow: 2px 2px 5px #0c0b0f;
     width: 300px;
     height: 30px;
     
@@ -111,15 +111,8 @@ button{
     padding: 10px;
     text-align: center;
  }
-#photo{
-    width: 30px;
-    height: 30px;
-}
-#image{
-    width: 30px;
-    height: 30px;
-}
-#images{
+
+.image{
     width: 30px;
     height: 30px;
 }
