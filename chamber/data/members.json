@@ -4,62 +4,62 @@
         "address": "15 Independence Avenue, Accra",
         "phone": "+233 24 123 4567",
         "website": "https://techhubsolutions.com",
-        "image": "techhub.png",
+        "image": "tech1.jpeg",
         "membership": 3,
-        "description": "Leading software development company."
+        "description": "Leading software development company specializing in web and mobile applications."
     },
     {
         "name": "Sunrise Hotel",
         "address": "12 Beach Road, Cape Coast",
         "phone": "+233 20 654 3210",
         "website": "https://sunrisehotel.com",
-        "image": "sunrise.png",
+        "image": "tech2.jpeg",
         "membership": 2,
-        "description": "Luxury accommodation and conference center."
+        "description": "Luxury hotel offering accommodation, conference facilities, and restaurant services."
     },
     {
         "name": "Eco Farms",
         "address": "Tamale Highway",
         "phone": "+233 27 888 1111",
         "website": "https://ecofarms.com",
-        "image": "eco.png",
+        "image": "tech3.jpeg",
         "membership": 1,
-        "description": "Organic food producer."
+        "description": "Organic farm producing fresh vegetables, fruits, and poultry."
     },
     {
         "name": "Alpha Logistics",
         "address": "Tema Industrial Area",
         "phone": "+233 50 222 3333",
         "website": "https://alphalogistics.com",
-        "image": "alpha.png",
+        "image": "tech4.jpeg",
         "membership": 2,
-        "description": "Fast cargo delivery services."
+        "description": "Reliable logistics and cargo transportation services across Ghana."
     },
     {
         "name": "Fresh Market",
         "address": "Kumasi Central",
         "phone": "+233 54 777 8888",
         "website": "https://freshmarket.com",
-        "image": "fresh.png",
+        "image": "tech5.jpeg",
         "membership": 1,
-        "description": "Retail grocery store."
+        "description": "Retail grocery store providing fresh food and household products."
     },
     {
         "name": "Skyline Travels",
         "address": "Airport City, Accra",
         "phone": "+233 55 444 2222",
         "website": "https://skylinetravels.com",
-        "image": "sky.png",
+        "image": "tech6.jpeg",
         "membership": 3,
-        "description": "Travel and tourism agency."
+        "description": "Travel and tourism agency specializing in local and international trips."
     },
     {
         "name": "Royal Furniture",
-        "address": "Spintex Road",
+        "address": "Spintex Road, Accra",
         "phone": "+233 59 111 9999",
         "website": "https://royalfurniture.com",
-        "image": "royal.png",
+        "image": "tech9.jpeg",
         "membership": 2,
-        "description": "Quality home and office furniture."
+        "description": "Manufacturer and retailer of quality home and office furniture."
     }
 ]
