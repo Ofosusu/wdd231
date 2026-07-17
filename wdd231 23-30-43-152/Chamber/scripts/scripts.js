@@ -1,6 +1,5 @@
 
-// MEMBERS DIRECTORY
-// ==============================
+
 
 const url = "data/members.json";
 const container = document.querySelector("#members");
