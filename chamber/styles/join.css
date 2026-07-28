@@ -1,0 +1,319 @@
+:root {
+    --indigo: #1B2A4A;
+    --indigo-deep: #101a30;
+    --sand: #EDE1C9;
+    --cream: #FAF6EC;
+    --gold: #C89B3C;
+    --gold-dark: #a67f2c;
+    --ink: #3B2A1A;
+    --clay: #B5651D;
+
+    --font-display: "Fraunces", serif;
+    --font-body: "Source Sans 3", sans-serif;
+    --font-mono: "IBM Plex Mono", monospace;
+}
+
+.join-main,
+.thankyou-main {
+    background-color: var(--sand);
+    color: var(--ink);
+    font-family: var(--font-body);
+    padding: 2rem 1.25rem 4rem;
+}
+
+.join-main h1,
+.thankyou-main h1 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    color: var(--indigo);
+    margin-bottom: 0.25rem;
+}
+
+.join-intro {
+    max-width: 60ch;
+    margin-bottom: 2rem;
+    color: var(--ink);
+    opacity: 0.85;
+}
+
+.join-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+@media (min-width: 900px) {
+    .join-layout {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .join-form {
+        flex: 2;
+    }
+
+    .membership-cards {
+        flex: 1;
+        position: sticky;
+        top: 1.5rem;
+    }
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    background: var(--cream);
+    padding: 2rem;
+    border: 1px solid rgba(27, 42, 74, 0.15);
+    border-radius: 4px;
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-weight: 600;
+    color: var(--indigo);
+    font-size: 0.95rem;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form select,
+.join-form textarea {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--ink);
+    background: #fff;
+    border: 1px solid rgba(27, 42, 74, 0.3);
+    border-radius: 3px;
+    padding: 0.65rem 0.75rem;
+}
+
+.join-form input:focus-visible,
+.join-form select:focus-visible,
+.join-form textarea:focus-visible,
+.seal:focus-visible,
+.close-modal:focus-visible,
+.back-home:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
+}
+
+.join-form input:invalid:not(:placeholder-shown) {
+    border-color: var(--clay);
+}
+
+.join-form textarea {
+    resize: vertical;
+    min-height: 6rem;
+}
+
+.join-form input[type="submit"] {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--cream);
+    background: var(--indigo);
+    border: none;
+    border-radius: 3px;
+    padding: 0.85rem 2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.join-form input[type="submit"]:hover,
+.join-form input[type="submit"]:focus-visible {
+    background: var(--indigo-deep);
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media (min-width: 900px) {
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background: var(--cream);
+    border: 1px solid rgba(27, 42, 74, 0.2);
+    border-top: 6px solid var(--indigo);
+    border-radius: 2px;
+    padding: 1.25rem 1.1rem 1.4rem;
+    position: relative;
+    box-shadow: 0 3px 0 rgba(27, 42, 74, 0.08);
+
+    opacity: 0;
+    transform: translateY(14px);
+    animation: unfurl 0.6s ease-out forwards;
+    animation-delay: calc(var(--delay) * 140ms + 200ms);
+}
+
+.card.np    { border-top-color: #6b7280; }
+.card.bronze{ border-top-color: var(--clay); }
+.card.silver{ border-top-color: #8a94a6; }
+.card.gold  { border-top-color: var(--gold); }
+
+@keyframes unfurl {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.card h2 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    color: var(--indigo);
+    margin-bottom: 0.25rem;
+}
+
+.card-tag {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    opacity: 0.65;
+    margin-bottom: 0.9rem;
+}
+
+.seal {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: var(--cream);
+    background: var(--gold-dark);
+    border: none;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.seal:hover {
+    background: var(--gold);
+}
+
+.scroll-modal {
+    max-width: 32rem;
+    width: 90%;
+    border: none;
+    border-radius: 4px;
+    padding: 2rem;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--font-body);
+    border-top: 8px solid var(--gold);
+}
+
+.scroll-modal::backdrop {
+    background: rgba(16, 26, 48, 0.65);
+}
+
+.scroll-modal h2 {
+    font-family: var(--font-display);
+    color: var(--indigo);
+    margin-bottom: 0.25rem;
+}
+
+.modal-price {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--clay);
+    margin-bottom: 1rem;
+}
+
+.scroll-modal ul {
+    margin: 0 0 1.5rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.close-modal {
+    font-family: var(--font-body);
+    font-weight: 600;
+    color: var(--cream);
+    background: var(--indigo);
+    border: none;
+    border-radius: 3px;
+    padding: 0.6rem 1.4rem;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    background: var(--indigo-deep);
+}
+
+.submission-summary {
+    background: var(--cream);
+    border: 1px solid rgba(27, 42, 74, 0.15);
+    border-radius: 4px;
+    padding: 1.5rem 2rem;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.submission-summary div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 1px dashed rgba(27, 42, 74, 0.2);
+    padding-bottom: 0.75rem;
+}
+
+.submission-summary div:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.submission-summary dt {
+    font-weight: 600;
+    color: var(--indigo);
+}
+
+.submission-summary dd {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    text-align: right;
+}
+
+.back-home {
+    display: inline-block;
+    margin-top: 2rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--cream);
+    background: var(--indigo);
+    padding: 0.7rem 1.6rem;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.back-home:hover {
+    background: var(--indigo-deep);
+}
