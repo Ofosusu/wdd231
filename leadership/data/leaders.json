@@ -1,0 +1,206 @@
+[
+    {
+        "id": 1,
+        "name": "Kwame Nkrumah",
+        "country": "Ghana",
+        "birth": "21 September 1909",
+        "death": "27 April 1972",
+        "years": "1909–1972",
+        "position": "First President of Ghana",
+        "image": "images/nkrumah.jpg",
+        "quote": "Freedom is not something that one people can bestow on another as a gift.",
+        "biography": "Kwame Nkrumah led Ghana to independence from British colonial rule in 1957, making it the first sub-Saharan African nation to achieve independence. He promoted Pan-Africanism and worked to unite African countries politically and economically.",
+        "achievements": [
+            "Led Ghana to independence in 1957",
+            "Became Ghana's first Prime Minister and President",
+            "Promoted Pan-African unity",
+            "Helped establish the Organization of African Unity"
+        ],
+        "challenges": [
+            "Economic instability",
+            "Political opposition",
+            "Military coup in 1966"
+        ],
+        "timeline": [
+            "1909 - Born",
+            "1949 - Founded Convention People's Party",
+            "1957 - Ghana gained independence",
+            "1960 - Became President",
+            "1966 - Removed in military coup",
+            "1972 - Died"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Thomas Sankara",
+        "country": "Burkina Faso",
+        "birth": "21 December 1949",
+        "death": "15 October 1987",
+        "years": "1949–1987",
+        "position": "President of Burkina Faso",
+        "image": "images/sankara.jpg",
+        "quote": "He who feeds you controls you.",
+        "biography": "Thomas Sankara transformed Upper Volta into Burkina Faso and introduced reforms aimed at fighting corruption, improving education, healthcare, women's rights, and national self-reliance.",
+        "achievements": [
+            "Renamed Upper Volta to Burkina Faso",
+            "Expanded education and healthcare",
+            "Promoted women's equality",
+            "Fought corruption"
+        ],
+        "challenges": [
+            "Political opposition",
+            "Economic pressure",
+            "Assassinated in 1987"
+        ],
+        "timeline": [
+            "1949 - Born",
+            "1983 - Became President",
+            "1984 - Country renamed Burkina Faso",
+            "1987 - Assassinated"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Steve Biko",
+        "country": "South Africa",
+        "birth": "18 December 1946",
+        "death": "12 September 1977",
+        "years": "1946–1977",
+        "position": "Anti-Apartheid Activist",
+        "image": "images/biko.jpg",
+        "quote": "The greatest weapon in the hand of the oppressor is the mind of the oppressed.",
+        "biography": "Steve Biko founded the Black Consciousness Movement, encouraging Black South Africans to reject apartheid and embrace dignity, confidence, and equality.",
+        "achievements": [
+            "Founded the Black Consciousness Movement",
+            "Inspired anti-apartheid activism",
+            "Promoted Black pride and self-worth"
+        ],
+        "challenges": [
+            "Government bans",
+            "Repeated arrests",
+            "Died in police custody"
+        ],
+        "timeline": [
+            "1946 - Born",
+            "1968 - Founded Black Consciousness Movement",
+            "1977 - Died in police custody"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Patrice Lumumba",
+        "country": "Democratic Republic of the Congo",
+        "birth": "2 July 1925",
+        "death": "17 January 1961",
+        "years": "1925–1961",
+        "position": "First Prime Minister of the Congo",
+        "image": "images/lumumba.jpg",
+        "quote": "History will one day have its say.",
+        "biography": "Patrice Lumumba played a central role in the Congo's independence from Belgium and became the country's first democratically elected Prime Minister.",
+        "achievements": [
+            "Led Congo to independence",
+            "First Prime Minister",
+            "Advocated national unity"
+        ],
+        "challenges": [
+            "Political instability",
+            "Cold War interference",
+            "Assassinated in 1961"
+        ],
+        "timeline": [
+            "1925 - Born",
+            "1960 - Congo gained independence",
+            "1960 - Became Prime Minister",
+            "1961 - Assassinated"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Ahmed Sékou Touré",
+        "country": "Guinea",
+        "birth": "9 January 1922",
+        "death": "26 March 1984",
+        "years": "1922–1984",
+        "position": "First President of Guinea",
+        "image": "images/sekou.jpg",
+        "quote": "We prefer poverty in freedom to riches in slavery.",
+        "biography": "Ahmed Sékou Touré led Guinea to independence from France in 1958 after rejecting continued French colonial rule in a national referendum.",
+        "achievements": [
+            "Led Guinea to independence",
+            "First President of Guinea",
+            "Advocated African sovereignty"
+        ],
+        "challenges": [
+            "Economic hardship",
+            "Political repression",
+            "International isolation"
+        ],
+        "timeline": [
+            "1922 - Born",
+            "1958 - Guinea gained independence",
+            "1958 - Became President",
+            "1984 - Died"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Haile Selassie",
+        "country": "Ethiopia",
+        "birth": "23 July 1892",
+        "death": "27 August 1975",
+        "years": "1892–1975",
+        "position": "Emperor of Ethiopia",
+        "image": "images/haile.jpg",
+        "quote": "Throughout history, it has been the inaction of those who could have acted that has made it possible for evil to triumph.",
+        "biography": "Emperor Haile Selassie modernized Ethiopia, resisted Italian occupation, and became an influential voice for African unity. Ethiopia maintained its sovereignty during the colonial era except for the period of Italian occupation from 1936 to 1941.",
+        "achievements": [
+            "Modernized Ethiopia",
+            "Opposed Italian occupation",
+            "Supported African unity",
+            "Helped establish the Organization of African Unity"
+        ],
+        "challenges": [
+            "Italian invasion",
+            "Political unrest",
+            "Overthrown in 1974"
+        ],
+        "timeline": [
+            "1892 - Born",
+            "1930 - Crowned Emperor",
+            "1936 - Italian invasion",
+            "1963 - OAU founded in Addis Ababa",
+            "1974 - Deposed",
+            "1975 - Died"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Julius Nyerere",
+        "country": "Tanzania",
+        "birth": "13 April 1922",
+        "death": "14 October 1999",
+        "years": "1922–1999",
+        "position": "First President of Tanzania",
+        "image": "images/nyerere.jpg",
+        "quote": "Without unity there is no future for Africa.",
+        "biography": "Julius Nyerere led Tanganyika to independence and later united Tanganyika and Zanzibar to form Tanzania. He promoted education, African socialism, and Pan-African cooperation.",
+        "achievements": [
+            "Led Tanganyika to independence",
+            "Created Tanzania",
+            "Expanded access to education",
+            "Promoted African unity"
+        ],
+        "challenges": [
+            "Economic difficulties",
+            "Implementation of Ujamaa policies",
+            "Regional conflicts"
+        ],
+        "timeline": [
+            "1922 - Born",
+            "1961 - Tanganyika gained independence",
+            "1964 - Tanzania formed",
+            "1985 - Retired",
+            "1999 - Died"
+        ]
+    }
+]
