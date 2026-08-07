@@ -4,9 +4,9 @@
     --sand: #EDE1C9;
     --cream: #FAF6EC;
     --gold: #C89B3C;
-    --gold-dark: #a67f2c;
-    --ink: #3B2A1A;
-    --clay: #B5651D;
+     --ink: #3B2A1A;
+    --gold-dark: #785A1E;  
+     --clay: #965014;      
 
     --font-display: "Fraunces", serif;
     --font-body: "Source Sans 3", sans-serif;
@@ -316,4 +316,20 @@
 
 .back-home:hover {
     background: var(--indigo-deep);
+}
+
+.card.np {
+    --delay: 0;
+}
+
+.card.bronze {
+    --delay: 1;
+}
+
+.card.silver {
+    --delay: 2;
+}
+
+.card.gold {
+    --delay: 3;
 }
