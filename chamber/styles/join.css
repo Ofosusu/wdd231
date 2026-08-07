@@ -4,9 +4,9 @@
     --sand: #EDE1C9;
     --cream: #FAF6EC;
     --gold: #C89B3C;
-     --ink: #3B2A1A;
-    --gold-dark: #785A1E;  
-     --clay: #965014;      
+    --ink: #3B2A1A;
+    --gold-dark: #785A1E;
+    --clay: #965014;
 
     --font-display: "Fraunces", serif;
     --font-body: "Source Sans 3", sans-serif;
@@ -160,10 +160,25 @@
     animation-delay: calc(var(--delay) * 140ms + 200ms);
 }
 
-.card.np    { border-top-color: #6b7280; }
-.card.bronze{ border-top-color: var(--clay); }
-.card.silver{ border-top-color: #8a94a6; }
-.card.gold  { border-top-color: var(--gold); }
+.card.np {
+    border-top-color: #6b7280;
+    --delay: 0;
+}
+
+.card.bronze {
+    border-top-color: var(--clay);
+    --delay: 1;
+}
+
+.card.silver {
+    border-top-color: #8a94a6;
+    --delay: 2;
+}
+
+.card.gold {
+    border-top-color: var(--gold);
+    --delay: 3;
+}
 
 @keyframes unfurl {
     to {
@@ -316,20 +331,4 @@
 
 .back-home:hover {
     background: var(--indigo-deep);
-}
-
-.card.np {
-    --delay: 0;
-}
-
-.card.bronze {
-    --delay: 1;
-}
-
-.card.silver {
-    --delay: 2;
-}
-
-.card.gold {
-    --delay: 3;
 }
