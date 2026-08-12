@@ -1,143 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore biographies, achievements, challenges, timelines, and quotes from important African independence leaders.">
-  <meta name="author" content="David Amoah">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>African Leaders | Independence Heroes</title>
+    <meta name="description" content="Explore biographies, achievements, challenges, timelines, and quotes from important African independence leaders.">
+    <meta name="author" content="David Amoah">
 
-  <link rel="icon" href="images/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <meta property="og:title" content="African Independence Leaders | Profiles">
+    <meta property="og:description" content="Explore the lives, achievements, challenges, and legacies of important African independence leaders.">
+    <meta property="og:image" content="https://ofosusu.github.io/wdd231/leadership/images/nkrumah.jpeg">
+    <meta property="og:url" content="https://ofosusu.github.io/wdd231/leadership/leaders.html">
+    <meta property="og:type" content="website">
 
-  <meta property="og:title" content="African Leaders | Independence Heroes">
-  <meta property="og:description" content="Explore biographies and achievements of African leaders who fought for freedom, justice, unity, and self-determination.">
-  <meta property="og:image" content="https://ofosusu.github.io/wdd231/leadership/images/hero.jpg">
-  <meta property="og:url" content="https://ofosusu.github.io/wdd231/leadership/leaders.html">
-  <meta property="og:type" content="website">
+    <title>Leaders | African Independence Leaders</title>
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="African Independence Leaders">
-  <meta name="twitter:description" content="Explore biographies and achievements of important African independence leaders.">
-  <meta name="twitter:image" content="https://ofosusu.github.io/wdd231/leadership/images/hero.jpg">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/leaders.css">
 
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/leaders.css">
+    <script defer src="script/leaders.js"></script>
+    <script defer src="script/main.js"></script>
 
-  <script type="module" src="script/leaders.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
+
+<header>
     <div class="logo">
-      <a href="index.html" aria-label="African Independence Leaders home">
-        <h1>African Independence Leaders</h1>
-      </a>
+        <a href="index.html">African Independence Leaders</a>
     </div>
 
-    <button id="menuBtn" type="button" aria-label="Open navigation menu" aria-expanded="false">
-      ☰
-    </button>
+    <button id="menuBtn" aria-label="Open navigation menu">☰</button>
 
-    <nav id="navigation" aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="leaders.html">Leaders</a></li>
-        <li><a href="history.html">History</a></li>
-        <li><a href="references.html">References</a></li>
-      </ul>
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="leaders.html">Leaders</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
     </nav>
-  </header>
+</header>
 
-  <main>
+<main>
+
     <section class="page-hero">
-      <span class="section-label">Explore</span>
-      <h2>Independence Leaders</h2>
-      <p>
-        Explore remarkable individuals who led Africa's struggle for freedom,
-        unity, justice, and self-determination.
-      </p>
+        <p class="section-label">Featured Figures</p>
+
+        <h1>Independence Leaders</h1>
+
+        <p>
+            Explore remarkable individuals who led Africa's struggle for freedom,
+            unity, justice, and self-determination.
+        </p>
     </section>
 
     <section class="search-section">
-      <label for="searchLeader">Search for a leader</label>
-      <div class="search-wrapper">
+        <label for="searchLeader">Search Leaders</label>
         <input
-          type="search"
-          id="searchLeader"
-          placeholder="Search by name or country..."
-          autocomplete="off"
+            type="search"
+            id="searchLeader"
+            placeholder="Search for a leader or country"
         >
-      </div>
-
-      <p id="searchMessage" class="search-message"></p>
     </section>
 
     <section class="leaders-section">
-      <div id="leadersContainer" class="leaders-grid"></div>
-    </section>
-
-    <section class="favorites-section">
-      <h2>Your Saved Leaders</h2>
-      <p id="favoriteMessage">
-        Select a leader and save them to your favorites.
-      </p>
+        <div id="leadersContainer" class="leaders-grid"></div>
     </section>
 
     <section class="facts">
-      <span class="section-label">Did You Know?</span>
-      <h2>Quick Facts</h2>
+        <p class="section-label">Did You Know?</p>
+        <h2>Quick Facts</h2>
 
-      <div class="facts-grid">
-        <article class="fact">
-          <h3 id="leaderCount">7</h3>
-          <p>Featured Leaders</p>
-        </article>
+        <div class="facts-grid">
 
-        <article class="fact">
-          <h3 id="countryCount">6</h3>
-          <p>African Countries</p>
-        </article>
+            <article class="fact">
+                <h3>7</h3>
+                <p>Featured Leaders</p>
+            </article>
 
-        <article class="fact">
-          <h3>1900s</h3>
-          <p>Century of Independence</p>
-        </article>
+            <article class="fact">
+                <h3>6</h3>
+                <p>African Countries</p>
+            </article>
 
-        <article class="fact">
-          <h3>1 Goal</h3>
-          <p>Freedom and Unity</p>
-        </article>
-      </div>
+            <article class="fact">
+                <h3>1900s</h3>
+                <p>Century of Independence</p>
+            </article>
+
+            <article class="fact">
+                <h3>1 Goal</h3>
+                <p>Freedom and Unity</p>
+            </article>
+
+        </div>
     </section>
-  </main>
 
-  <dialog id="leaderModal">
-    <div class="modal-content">
-      <button id="closeModal" class="modal-close" type="button" aria-label="Close leader details">
-        ×
-      </button>
+</main>
 
-      <div id="modalContent"></div>
-    </div>
-  </dialog>
-
-  <footer>
+<footer>
     <div>
-      <h3>African Independence Leaders</h3>
-      <p>Learning from Africa's greatest freedom fighters.</p>
+        <h2>African Independence Leaders</h2>
+        <p>Learning from Africa's greatest freedom fighters.</p>
     </div>
 
     <div>
-      <p>© <span id="year"></span> David Amoah</p>
-      <p>Educational Website Project</p>
+        <p>© <span id="year"></span> David Amoah</p>
+        <p>Educational Website Project</p>
     </div>
-  </footer>
+</footer>
+
 </body>
 </html>
