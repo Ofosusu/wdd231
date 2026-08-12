@@ -1,250 +1,225 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Explore the lives and legacies of African leaders who fought for independence."
-    />
-    <meta name="author" content="David Amoah" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore African independence leaders and the history, struggles, achievements, and legacy that shaped modern Africa.">
+  <meta name="author" content="David Amoah">
 
-    <title>Independence-Era African Leaders</title>
+  <title>African Independence Leaders | Heroes Who Changed Africa</title>
 
-    <link rel="icon" href="/images/favicon.ico" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/images/favicon-16x16.png"
-    />
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 
-    <meta
-      property="og:title"
-      content="Independence-Era African Leaders | Their Lives and Legacies"
-    />
-    <meta
-      property="og:description"
-      content="Discover the inspiring stories of Kwame Nkrumah, Thomas Sankara, Steve Biko, and other visionary leaders who fought for African independence."
-    />
-    <meta property="og:image" content="https://ofosusu.github.io/wdd231/chamber/images/logo1.jpeg">
-    <meta property="og:url" content="https://www.example.com/index.html" />
-    <meta property="og:type" content="website" />
+  <meta property="og:title" content="African Independence Leaders | Heroes Who Changed Africa">
+  <meta property="og:description" content="Explore the lives and legacies of African leaders who fought for independence, justice, unity, and self-determination.">
+  <meta property="og:image" content="https://ofosusu.github.io/wdd231/leadership/images/hero.jpg">
+  <meta property="og:url" content="https://ofosusu.github.io/wdd231/leadership/index.html">
+  <meta property="og:type" content="website">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Independence-Era African Leaders" />
-    <meta
-      name="twitter:description"
-      content="Discover the inspiring stories of visionary leaders who fought for African independence."
-    />
-    <meta
-      name="twitter:image"
-      content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7i_bn_lMkFoj3HQVNxT40ziXHHZcALaBGSurRxKPuAg&s"
-    />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="African Independence Leaders">
+  <meta name="twitter:description" content="Explore the lives and legacies of African leaders who fought for independence and self-determination.">
+  <meta name="twitter:image" content="https://ofosusu.github.io/wdd231/leadership/images/hero.jpg">
 
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/leaders.css" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <script defer src="script/leaders.js"></script>
-    <script defer src="script/main.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/leaders.css">
 
-  <body>
-    <header>
-      <div class="logo">
-        <h2>African Independence Leaders</h2>
+  <script type="module" src="script/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html" aria-label="African Independence Leaders home">
+        <h1>African Independence Leaders</h1>
+      </a>
+    </div>
+
+    <button id="menuBtn" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="leaders.html">Leaders</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">African History & Legacy</span>
+        <h2>The Heroes Who Changed Africa</h2>
+        <p>
+          Discover the inspiring stories of visionary leaders who challenged
+          colonial rule, fought for justice, and helped shape modern Africa.
+        </p>
+        <a class="button" href="leaders.html">Meet the Leaders</a>
       </div>
+    </section>
 
-      <button id="menuBtn">☰</button>
+    <section class="intro section-container">
+      <span class="section-label">Our Purpose</span>
+      <h2>About This Project</h2>
 
-      <nav id="navigation">
-        <ul>
-          <li><a class="active" href="index.html">Home</a></li>
+      <p>
+        Africa's struggle for independence transformed the continent forever.
+        Throughout the twentieth century courageous leaders united their people
+        against colonial rule, calling for freedom, dignity, equality, and
+        self-government.
+      </p>
 
-          <li><a href="leaders.html">Leaders</a></li>
+      <p>
+        This website introduces influential leaders who inspired independence
+        movements and promoted African unity. Visitors can learn about their
+        backgrounds, achievements, challenges, and lasting impact.
+      </p>
+    </section>
 
-          <li><a href="history.html">History</a></li>
-
-          <li><a href="references.html">References</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1>The Heroes Who Changed Africa</h1>
-
-          <p>
-            Discover the inspiring stories of visionary leaders who challenged
-            colonial rule, fought for justice, and helped shape modern Africa
-            during the twentieth century.
-          </p>
-
-          <a class="button" href="leaders.html"> Meet the Leaders </a>
-        </div>
-      </section>
-
-      <section class="intro">
-        <h2>About This Project</h2>
-
+    <section class="cards section-container">
+      <article class="card">
+        <span class="card-number">01</span>
+        <h3>Leader Profiles</h3>
         <p>
-          Africa's struggle for independence transformed the continent forever.
-          Throughout the twentieth century courageous leaders united their
-          people against colonial rule, calling for freedom, dignity, equality,
-          and self-government.
+          Read biographies, achievements, memorable quotes, and timelines of
+          important African leaders.
         </p>
+        <a href="leaders.html">Learn More →</a>
+      </article>
 
+      <article class="card">
+        <span class="card-number">02</span>
+        <h3>History</h3>
         <p>
-          This website introduces several influential leaders who inspired
-          independence movements and promoted African unity. Visitors can learn
-          about their backgrounds, major achievements, challenges they faced,
-          and the lasting impact they continue to have on African history today.
+          Understand colonialism, independence movements, and how African
+          nations gained freedom.
         </p>
-      </section>
+        <a href="history.html">Explore →</a>
+      </article>
 
-      <section class="cards">
-        <div class="card">
-          <h3>Leader Profiles</h3>
+      <article class="card">
+        <span class="card-number">03</span>
+        <h3>Why It Matters</h3>
+        <p>
+          These leaders continue to inspire generations through their courage,
+          sacrifice, and vision for Africa.
+        </p>
+        <a href="history.html">Read More →</a>
+      </article>
+    </section>
 
+    <section class="timeline-preview section-container">
+      <span class="section-label">A Journey Through Time</span>
+      <h2>Important Dates</h2>
+
+      <div class="timeline">
+        <article>
+          <span class="timeline-year">1957</span>
+          <h3>Ghana's Independence</h3>
           <p>
-            Read biographies, achievements, memorable quotes, and timelines of
-            important African leaders.
+            Ghana became the first sub-Saharan African nation to gain
+            independence from British colonial rule.
           </p>
+        </article>
 
-          <a href="leaders.html"> Learn More → </a>
-        </div>
-
-        <div class="card">
-          <h3>History</h3>
-
+        <article>
+          <span class="timeline-year">1960</span>
+          <h3>The Year of Africa</h3>
           <p>
-            Understand colonialism, independence movements, and how African
-            nations gained freedom.
+            Seventeen African nations achieved independence during a historic
+            wave of decolonization.
           </p>
+        </article>
 
-          <a href="history.html"> Explore → </a>
-        </div>
-
-        <div class="card">
-          <h3>Why It Matters</h3>
-
+        <article>
+          <span class="timeline-year">1963</span>
+          <h3>Organization of African Unity</h3>
           <p>
-            These leaders continue to inspire generations through their courage,
-            sacrifice, and vision for Africa.
+            Independent African states established the Organization of African
+            Unity to strengthen continental cooperation.
           </p>
+        </article>
 
-          <a href="history.html"> Read More → </a>
-        </div>
-      </section>
+        <article>
+          <span class="timeline-year">1983</span>
+          <h3>Sankara's Leadership</h3>
+          <p>
+            Thomas Sankara became President of Burkina Faso and introduced
+            ambitious social and economic reforms.
+          </p>
+        </article>
+      </div>
+    </section>
 
-      <section class="timeline-preview">
-        <h2>Important Dates</h2>
+    <section class="featured section-container">
+      <span class="section-label">Featured Stories</span>
+      <h2>Featured Leaders</h2>
 
-        <div class="timeline">
-          <div>
-            <h3>1957</h3>
-
-            <p>
-              Ghana becomes the first sub-Saharan African nation to gain
-              independence.
-            </p>
-          </div>
-
-          <div>
-            <h3>1960</h3>
-
-            <p>
-              "The Year of Africa" as seventeen African nations achieve
-              independence.
-            </p>
-          </div>
-
-          <div>
-            <h3>1963</h3>
-
-            <p>Formation of the Organization of African Unity.</p>
-          </div>
-
-          <div>
-            <h3>1983</h3>
-
-            <p>Thomas Sankara becomes President of Burkina Faso.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="featured">
-        <h2>Featured Leaders</h2>
-
-        <div class="featured-grid">
-          <article>
-            <img src="images/nkrumah.jpeg" alt="Kwame Nkrumah" />
-
+      <div class="featured-grid">
+        <article>
+          <img src="images/nkrumah.jpeg" alt="Kwame Nkrumah">
+          <div class="featured-content">
             <h3>Kwame Nkrumah</h3>
-
             <p>
-              First President of Ghana and a leading advocate for
-              Pan-Africanism.
+              First Prime Minister and President of Ghana and a leading
+              advocate for Pan-Africanism.
             </p>
-          </article>
+          </div>
+        </article>
 
-          <article>
-            <img src="images/sankara.jpeg" alt="Thomas Sankara" />
-
+        <article>
+          <img src="images/sankara.jpeg" alt="Thomas Sankara">
+          <div class="featured-content">
             <h3>Thomas Sankara</h3>
-
             <p>
-              Known as "Africa's Che Guevara," he promoted self-reliance and
-              social reform.
+              Burkina Faso's revolutionary leader who promoted self-reliance,
+              social reform, and national development.
             </p>
-          </article>
+          </div>
+        </article>
 
-          <article>
-            <img src="images/biko.jpeg" alt="Steve Biko" />
-
+        <article>
+          <img src="images/biko.jpeg" alt="Steve Biko">
+          <div class="featured-content">
             <h3>Steve Biko</h3>
-
-            <p>Leader of the Black Consciousness Movement in South Africa.</p>
-          </article>
-        </div>
-      </section>
-
-      <div class="quote">
-        <blockquote>
-          "Freedom is not something that one people can bestow on another as a
-          gift."
-        </blockquote>
-
-        <p> Kwame Nkrumah</p>
+            <p>
+              South African activist and founder of the Black Consciousness
+              Movement.
+            </p>
+          </div>
+        </article>
       </div>
-    </main>
+    </section>
 
-    <footer>
-      <div>
-        <h3>African Independence Leaders</h3>
+    <section class="quote section-container">
+      <blockquote>
+        "Freedom is not something that one people can bestow on another as a
+        gift."
+      </blockquote>
+      <p>Kwame Nkrumah</p>
+    </section>
+  </main>
 
-        <p>Celebrating Africa's journey toward freedom.</p>
-      </div>
+  <footer>
+    <div>
+      <h3>African Independence Leaders</h3>
+      <p>Celebrating Africa's journey toward freedom.</p>
+    </div>
 
-      <div>
-        <p>© <span id="year"></span> David Amoah</p>
-
-        <p>Created for educational purposes.</p>
-      </div>
-    </footer>
-  </body>
+    <div>
+      <p>© <span id="year"></span> David Amoah</p>
+      <p>Created for educational purposes.</p>
+    </div>
+  </footer>
+</body>
 </html>

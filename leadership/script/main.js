@@ -1,63 +1,68 @@
-const menuBtn = document.querySelector("#menuBtn");
-const navigation = document.querySelector("#navigation");
+export function initializeNavigation() {
+  const menuBtn = document.querySelector("#menuBtn");
+  const navigation = document.querySelector("#navigation");
 
-if (menuBtn) {
-    menuBtn.addEventListener("click", () => {
-        navigation.classList.toggle("open");
+  if (!menuBtn || !navigation) {
+    return;
+  }
+
+  menuBtn.addEventListener("click", () => {
+    const isOpen = navigation.classList.toggle("open");
+
+    menuBtn.setAttribute("aria-expanded", String(isOpen));
+    menuBtn.setAttribute(
+      "aria-label",
+      isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+  });
+
+  navigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navigation.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+      menuBtn.setAttribute("aria-label", "Open navigation menu");
     });
+  });
 }
 
-const sections = document.querySelectorAll("section");
+export function setCurrentYear() {
+  const yearElement = document.querySelector("#year");
 
-const observer = new IntersectionObserver(
-    entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-            }
-        });
-    },
-    {
-        threshold: 0.2
-    }
-);
-
-sections.forEach(section => {
-    section.classList.add("fade");
-    observer.observe(section);
-});
-
-const topButton = document.createElement("button");
-
-topButton.id = "topButton";
-
-topButton.innerHTML = "↑";
-
-document.body.appendChild(topButton);
-
-window.addEventListener("scroll", () => {
-
-    if (window.scrollY > 400) {
-        topButton.classList.add("visible");
-    } else {
-        topButton.classList.remove("visible");
-    }
-
-});
-
-topButton.addEventListener("click", () => {
-
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-
-});
-
-const year = new Date().getFullYear();
-
-const footerYear = document.querySelector("#year");
-
-if (footerYear) {
-    footerYear.textContent = year;
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
 }
+
+export function getFavorites() {
+  try {
+    const saved = localStorage.getItem("favoriteLeaders");
+    return saved ? JSON.parse(saved) : [];
+  } catch {
+    return [];
+  }
+}
+
+export function saveFavorites(favorites) {
+  localStorage.setItem("favoriteLeaders", JSON.stringify(favorites));
+}
+
+export function toggleFavorite(name) {
+  const favorites = getFavorites();
+  const index = favorites.indexOf(name);
+
+  if (index === -1) {
+    favorites.push(name);
+  } else {
+    favorites.splice(index, 1);
+  }
+
+  saveFavorites(favorites);
+  return favorites;
+}
+
+export function isFavorite(name) {
+  return getFavorites().includes(name);
+}
+
+initializeNavigation();
+setCurrentYear();
